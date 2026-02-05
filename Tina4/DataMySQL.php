@@ -31,7 +31,7 @@ class DataMySQL implements DataBase
             throw new \Exception("Mysql extension for PHP needs to be installed");
         }
 
-        $this->dbh = new MySQLConnection(
+        $this->dbh = (new MySQLConnection(
             $this->hostName,
             $this->username,
             $this->password,
@@ -39,7 +39,7 @@ class DataMySQL implements DataBase
             $this->port,
             $this->charset,
             $this->certificateFile
-        )->getConnection();
+        ))->getConnection();
 
     }
 
