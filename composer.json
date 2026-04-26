@@ -10,10 +10,7 @@
             "Tina4\\": [
                 "Tina4/"
             ]
-        },
-        "files": [
-            "FarmIT/aliases.php"
-        ]
+        }
     },
     "require-dev": {
         "roave/security-advisories": "dev-latest",
